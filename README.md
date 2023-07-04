@@ -2,32 +2,26 @@
 基本bluetooth 经典蓝牙实现双向通信封装的jar包，可传输大数据
 
 使用方法：
-服务器端：
-/**
-* 注册服务
-**/
-BluetoothUtilManager.getInstance().start()
 
-客户端：
-/**
-* 使用mac地址链接
-**/
-BluetoothUtilManager.getInstance().connect("BT Macaddress")
+<b>注册服务</b>
+
+        BluetoothUtilManager.getInstance().start()
+
+<b>使用mac地址链接</b>
+
+        BluetoothUtilManager.getInstance().connect("BT Macaddress")
   
-/**
-* 监听bluetooth的状态，implement BluetoothObserver 接口
-**/
-BluetoothUtilManager.getInstance().addObserver(this)
+<b>监听bluetooth的状态，implement BluetoothObserver 接口</b>
 
-/**
-* 发送数据
-**/
-BluetoothUtilManager.getInstance().sendData("Hello bluetooth")
+        BluetoothUtilManager.getInstance().addObserver(this)
 
-/**
-* 注销服务
-**/
-BluetoothUtilManager.getInstance().stop()  
+<b>发送数据</b>
+
+        BluetoothUtilManager.getInstance().sendData("Hello bluetooth")
+
+<b> 注销服务<b>
+
+        BluetoothUtilManager.getInstance().stop()  
 
 
 下载地址：
